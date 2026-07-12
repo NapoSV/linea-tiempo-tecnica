@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "@fontsource/archivo/500.css";
+@import "@fontsource/archivo/600.css";
+@import "@fontsource/archivo/700.css";
+@import "@fontsource/archivo/800.css";
+@import "@fontsource/work-sans/400.css";
+@import "@fontsource/work-sans/500.css";
+@import "@fontsource/work-sans/600.css";
+
+@theme {
+  --font-display: "Archivo", sans-serif;
+  --font-sans: "Work Sans", sans-serif;
+
+  --color-background: #fafaf9;
+  --color-foreground: #17181c;
+  --color-card: #ffffff;
+  --color-border: #e4e4e2;
+  --color-muted-foreground: #8b8d94;
+  --color-accent: #d1531f;
+  --color-accent-foreground: #ffffff;
+  --color-primary: #d1531f;
+  --color-primary-foreground: #ffffff;
+  --color-input: #e4e4e2;
+
+  --animate-blob-1: blob1 28s ease-in-out infinite;
+  --animate-blob-2: blob2 34s ease-in-out infinite;
+}
+
+@keyframes blob1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(5vw, 7vw) scale(1.08); }
+}
+@keyframes blob2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-6vw, -5vw) scale(1.06); }
+}
+
+:root {
+  --line: #e4e4e2;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
